@@ -15,6 +15,7 @@
     --nav-active: #224590;
     --body-text: #3b3b3f;
     --pill-bg: #fcfcfa;
+    --toolbar-outline: #deded6;
   }
 
   * { box-sizing: border-box; }
@@ -72,7 +73,7 @@
     display: flex;
     align-items: center;
     gap: 48px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     white-space: nowrap;
   }
@@ -204,6 +205,16 @@
     background: rgba(31, 56, 168, 0.1);
   }
 
+  .toolbar button#btn-text-size {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid var(--toolbar-outline);
+    border-radius: 4px;
+    background: var(--bg);
+  }
+
   .toolbar svg { display: block; width: 100%; height: 100%; }
   .toolbar svg path { stroke: currentColor; }
   .toolbar svg path[fill="black"] { fill: currentColor; }
@@ -216,6 +227,7 @@
     --ink: #f2f2f0;
     --body-text: #c9c9cf;
     --pill-bg: #22242a;
+    --toolbar-outline: #33353c;
   }
   body.dark .hero h1,
   body.dark .nav-links a { color: #f2f2f0; }
